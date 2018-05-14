@@ -18,8 +18,8 @@ pipeline {
                 {
                     docker.withRegistry('https://605651801635.dkr.ecr.eu-west-1.amazonaws.com', 'ecr:eu-west-1:ECRRegistryPushKey') 
                     {
-                        docker.build('FAS')
-                        docker.image('FAS').push("${BUILD_NUMBER}")
+                        docker.build('fas')
+                        docker.image('fas').push("${BUILD_NUMBER}")
                     }
 
                 }
