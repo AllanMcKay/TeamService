@@ -17,8 +17,8 @@ pipeline {
                 {
                     docker.withRegistry('https://eu.gcr.io', 'gcr:FantasyFootballSite') 
                     {
-                        docker.build('teamservice')
-                        docker.image('teamservice').push("${BUILD_NUMBER}")
+                        docker.build('FantasyFootballSite/teamservice')
+                        docker.image('FantasyFootballSite/teamservice').push("${BUILD_NUMBER}")
                     }
 
                 }
